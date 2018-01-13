@@ -55,5 +55,37 @@ namespace EndOfChptrExercises
     {
       this.Close();
     }
+
+    private void btn3E25_Click(object sender, EventArgs e)
+    {
+      int num1;
+      int num2;
+
+      while (true)
+      {
+        do
+        {
+          MessageBox.Show("To complete this exercise you will need to input two positive numbers and we will determine if the first number is a multiple of the second number.");
+          num1 = int.Parse(Microsoft.VisualBasic.Interaction.InputBox("First number: ", "Num", ""));
+          num2 = int.Parse(Microsoft.VisualBasic.Interaction.InputBox("Second number: ", "Num", ""));
+        }
+
+        while (num1 <= 0 || num2 <= 0);  // Still doesn't handle non integers...but works
+
+        if (num1 >= 1 && num2 >= 1)
+        {
+          break;
+        }
+      }
+
+      if ( num2 % num1 == 0)
+      {
+        txtResult.Text = $"The first number {num1} is a multiple of the second number {num2}.";
+      }
+      else
+      {
+        txtResult.Text = $"The first number {num1} is not a multiple of the second number {num2}.";
+      }
+    }
   }
 }

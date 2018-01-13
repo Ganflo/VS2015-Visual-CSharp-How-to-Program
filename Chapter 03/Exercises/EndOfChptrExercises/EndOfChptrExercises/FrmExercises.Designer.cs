@@ -70,6 +70,7 @@
       this.btn3E25.TabIndex = 2;
       this.btn3E25.Text = "Exercise 3.25 - Multiples";
       this.btn3E25.UseVisualStyleBackColor = true;
+      this.btn3E25.Click += new System.EventHandler(this.btn3E25_Click);
       // 
       // btn3E26
       // 
