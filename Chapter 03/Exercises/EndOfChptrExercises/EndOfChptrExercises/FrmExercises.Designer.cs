@@ -81,6 +81,7 @@
       this.btn3E26.TabIndex = 3;
       this.btn3E26.Text = "Exercise 3.26 - Circle";
       this.btn3E26.UseVisualStyleBackColor = true;
+      this.btn3E26.Click += new System.EventHandler(this.btn3E26_Click);
       // 
       // btn3E27
       // 

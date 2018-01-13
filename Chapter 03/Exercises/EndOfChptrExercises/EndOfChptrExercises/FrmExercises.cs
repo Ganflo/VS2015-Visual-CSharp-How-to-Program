@@ -87,5 +87,19 @@ namespace EndOfChptrExercises
         txtResult.Text = $"The first number {num1} is not a multiple of the second number {num2}.";
       }
     }
+
+    private void btn3E26_Click(object sender, EventArgs e)
+    {
+      const decimal pi = 3.14159m;
+      decimal radius = decimal.Parse(Microsoft.VisualBasic.Interaction.InputBox("Enter the radius: ", "Num", ""));
+      decimal diameter = 2 * radius;
+      decimal circumference = pi * diameter;
+      decimal area = pi * (radius * radius);
+      txtResult.Text = 
+        $"Radius: {radius}" + Environment.NewLine + 
+        $"Diameter: {diameter}" + Environment.NewLine +
+        $"Circumference: {circumference}" + Environment.NewLine + 
+        $"Area: {area}";
+    }
   }
 }
