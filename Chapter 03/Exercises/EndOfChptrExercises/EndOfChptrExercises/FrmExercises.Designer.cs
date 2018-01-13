@@ -38,6 +38,9 @@
       this.btnClear = new System.Windows.Forms.Button();
       this.btnExit = new System.Windows.Forms.Button();
       this.btnPlaceholder = new System.Windows.Forms.Button();
+      this.btn3E30 = new System.Windows.Forms.Button();
+      this.btn3E31 = new System.Windows.Forms.Button();
+      this.btn3E32 = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // txtResult
@@ -138,19 +141,52 @@
       // 
       // btnPlaceholder
       // 
+      this.btnPlaceholder.BackColor = System.Drawing.SystemColors.InactiveCaption;
       this.btnPlaceholder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.btnPlaceholder.Location = new System.Drawing.Point(43, 128);
       this.btnPlaceholder.Name = "btnPlaceholder";
       this.btnPlaceholder.Size = new System.Drawing.Size(182, 56);
       this.btnPlaceholder.TabIndex = 9;
-      this.btnPlaceholder.Text = "Placeholder";
-      this.btnPlaceholder.UseVisualStyleBackColor = true;
+      this.btnPlaceholder.UseVisualStyleBackColor = false;
+      // 
+      // btn3E30
+      // 
+      this.btn3E30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btn3E30.Location = new System.Drawing.Point(43, 314);
+      this.btn3E30.Name = "btn3E30";
+      this.btn3E30.Size = new System.Drawing.Size(182, 56);
+      this.btn3E30.TabIndex = 10;
+      this.btn3E30.Text = "Exercise 3.30 - Counting Values";
+      this.btn3E30.UseVisualStyleBackColor = true;
+      // 
+      // btn3E31
+      // 
+      this.btn3E31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btn3E31.Location = new System.Drawing.Point(231, 314);
+      this.btn3E31.Name = "btn3E31";
+      this.btn3E31.Size = new System.Drawing.Size(182, 56);
+      this.btn3E31.TabIndex = 11;
+      this.btn3E31.Text = "Exercise 3.31 - Budgeting";
+      this.btn3E31.UseVisualStyleBackColor = true;
+      // 
+      // btn3E32
+      // 
+      this.btn3E32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.btn3E32.Location = new System.Drawing.Point(419, 314);
+      this.btn3E32.Name = "btn3E32";
+      this.btn3E32.Size = new System.Drawing.Size(182, 56);
+      this.btn3E32.TabIndex = 12;
+      this.btn3E32.Text = "Exercise 3.32 - Car-Pool";
+      this.btn3E32.UseVisualStyleBackColor = true;
       // 
       // FrmExercises
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(660, 549);
+      this.ClientSize = new System.Drawing.Size(660, 394);
+      this.Controls.Add(this.btn3E32);
+      this.Controls.Add(this.btn3E31);
+      this.Controls.Add(this.btn3E30);
       this.Controls.Add(this.btnPlaceholder);
       this.Controls.Add(this.btnExit);
       this.Controls.Add(this.btnClear);
@@ -181,6 +217,9 @@
     private System.Windows.Forms.Button btnClear;
     private System.Windows.Forms.Button btnExit;
     private System.Windows.Forms.Button btnPlaceholder;
+    private System.Windows.Forms.Button btn3E30;
+    private System.Windows.Forms.Button btn3E31;
+    private System.Windows.Forms.Button btn3E32;
   }
 }
 
