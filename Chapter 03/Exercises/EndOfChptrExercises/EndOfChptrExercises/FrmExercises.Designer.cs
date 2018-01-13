@@ -107,6 +107,7 @@
       this.btn3E28.TabIndex = 5;
       this.btn3E28.Text = "Exercise 3.28 - Digits of Integer";
       this.btn3E28.UseVisualStyleBackColor = true;
+      this.btn3E28.Click += new System.EventHandler(this.btn3E28_Click);
       // 
       // btn3E29
       // 

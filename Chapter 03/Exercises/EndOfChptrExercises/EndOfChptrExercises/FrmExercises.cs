@@ -120,5 +120,27 @@ namespace EndOfChptrExercises
         $"The character {'/'} has the value {(int)'/'}" + Environment.NewLine +
         $"The character {' '} has the value {(int)' '}" + Environment.NewLine;
     }
+
+    private void btn3E28_Click(object sender, EventArgs e)
+    {
+      txtResult.Text = "";
+
+      string userInput = Microsoft.VisualBasic.Interaction.InputBox("Enter a five digit number: ", "Num", "");
+
+      if (userInput.Length <= 5)
+      {
+        for (int i = 0; i < userInput.Length; i++)
+        {
+          txtResult.Text += $"{userInput[i]}   ";
+        }
+      }
+      else
+      {
+        for (int i = 0; i < 5; i++)
+        {
+          txtResult.Text += $"{userInput[i]}   ";
+        }
+      }
+    }
   }
 }
