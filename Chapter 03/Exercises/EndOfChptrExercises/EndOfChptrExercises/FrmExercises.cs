@@ -101,5 +101,24 @@ namespace EndOfChptrExercises
         $"Circumference: {circumference}" + Environment.NewLine + 
         $"Area: {area}";
     }
+
+    private void btn3E27_Click(object sender, EventArgs e)
+    {
+      txtResult.Text =
+        $"The character {'A'} has the value {(int)'A'}" + Environment.NewLine +
+        $"The character {'B'} has the value {(int)'B'}" + Environment.NewLine +
+        $"The character {'C'} has the value {(int)'C'}" + Environment.NewLine +
+        $"The character {'a'} has the value {(int)'a'}" + Environment.NewLine +
+        $"The character {'b'} has the value {(int)'b'}" + Environment.NewLine +
+        $"The character {'c'} has the value {(int)'c'}" + Environment.NewLine +
+        $"The character {'0'} has the value {(int)'0'}" + Environment.NewLine +
+        $"The character {'1'} has the value {(int)'1'}" + Environment.NewLine +
+        $"The character {'2'} has the value {(int)'2'}" + Environment.NewLine +
+        $"The character {'$'} has the value {(int)'$'}" + Environment.NewLine +
+        $"The character {'*'} has the value {(int)'*'}" + Environment.NewLine +
+        $"The character {'+'} has the value {(int)'+'}" + Environment.NewLine +
+        $"The character {'/'} has the value {(int)'/'}" + Environment.NewLine +
+        $"The character {' '} has the value {(int)' '}" + Environment.NewLine;
+    }
   }
 }

@@ -46,7 +46,7 @@
       this.txtResult.Location = new System.Drawing.Point(43, 22);
       this.txtResult.Multiline = true;
       this.txtResult.Name = "txtResult";
-      this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+      this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
       this.txtResult.Size = new System.Drawing.Size(558, 100);
       this.txtResult.TabIndex = 0;
       // 
@@ -92,6 +92,7 @@
       this.btn3E27.TabIndex = 4;
       this.btn3E27.Text = "Exercise 3.27 - Integer Equivalent";
       this.btn3E27.UseVisualStyleBackColor = true;
+      this.btn3E27.Click += new System.EventHandler(this.btn3E27_Click);
       // 
       // btn3E28
       // 
