@@ -45,5 +45,15 @@ namespace EndOfChptrExercises
         txtResult.Text = "The number is odd";
       }
     }
+
+    private void btnClear_Click(object sender, EventArgs e)
+    {
+      txtResult.Text = "";
+    }
+
+    private void btnExit_Click(object sender, EventArgs e)
+    {
+      this.Close();
+    }
   }
 }
