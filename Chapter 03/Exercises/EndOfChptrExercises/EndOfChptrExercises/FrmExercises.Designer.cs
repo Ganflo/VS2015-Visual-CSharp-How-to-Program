@@ -41,12 +41,13 @@
       this.btn3E30 = new System.Windows.Forms.Button();
       this.btn3E31 = new System.Windows.Forms.Button();
       this.btn3E32 = new System.Windows.Forms.Button();
+      this.lblHeader = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // txtResult
       // 
       this.txtResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.txtResult.Location = new System.Drawing.Point(43, 22);
+      this.txtResult.Location = new System.Drawing.Point(44, 72);
       this.txtResult.Multiline = true;
       this.txtResult.Name = "txtResult";
       this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -56,7 +57,7 @@
       // btn3E24
       // 
       this.btn3E24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3E24.Location = new System.Drawing.Point(43, 190);
+      this.btn3E24.Location = new System.Drawing.Point(44, 240);
       this.btn3E24.Name = "btn3E24";
       this.btn3E24.Size = new System.Drawing.Size(182, 56);
       this.btn3E24.TabIndex = 1;
@@ -67,7 +68,7 @@
       // btn3E25
       // 
       this.btn3E25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3E25.Location = new System.Drawing.Point(231, 190);
+      this.btn3E25.Location = new System.Drawing.Point(232, 240);
       this.btn3E25.Name = "btn3E25";
       this.btn3E25.Size = new System.Drawing.Size(182, 56);
       this.btn3E25.TabIndex = 2;
@@ -78,7 +79,7 @@
       // btn3E26
       // 
       this.btn3E26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3E26.Location = new System.Drawing.Point(419, 190);
+      this.btn3E26.Location = new System.Drawing.Point(420, 240);
       this.btn3E26.Name = "btn3E26";
       this.btn3E26.Size = new System.Drawing.Size(182, 56);
       this.btn3E26.TabIndex = 3;
@@ -89,7 +90,7 @@
       // btn3E27
       // 
       this.btn3E27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3E27.Location = new System.Drawing.Point(43, 252);
+      this.btn3E27.Location = new System.Drawing.Point(44, 302);
       this.btn3E27.Name = "btn3E27";
       this.btn3E27.Size = new System.Drawing.Size(182, 56);
       this.btn3E27.TabIndex = 4;
@@ -100,7 +101,7 @@
       // btn3E28
       // 
       this.btn3E28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3E28.Location = new System.Drawing.Point(231, 252);
+      this.btn3E28.Location = new System.Drawing.Point(232, 302);
       this.btn3E28.Name = "btn3E28";
       this.btn3E28.Size = new System.Drawing.Size(182, 56);
       this.btn3E28.TabIndex = 5;
@@ -110,7 +111,7 @@
       // btn3E29
       // 
       this.btn3E29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3E29.Location = new System.Drawing.Point(419, 252);
+      this.btn3E29.Location = new System.Drawing.Point(420, 302);
       this.btn3E29.Name = "btn3E29";
       this.btn3E29.Size = new System.Drawing.Size(182, 56);
       this.btn3E29.TabIndex = 6;
@@ -120,7 +121,7 @@
       // btnClear
       // 
       this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btnClear.Location = new System.Drawing.Point(231, 128);
+      this.btnClear.Location = new System.Drawing.Point(232, 178);
       this.btnClear.Name = "btnClear";
       this.btnClear.Size = new System.Drawing.Size(182, 56);
       this.btnClear.TabIndex = 7;
@@ -131,7 +132,7 @@
       // btnExit
       // 
       this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btnExit.Location = new System.Drawing.Point(419, 128);
+      this.btnExit.Location = new System.Drawing.Point(420, 178);
       this.btnExit.Name = "btnExit";
       this.btnExit.Size = new System.Drawing.Size(182, 56);
       this.btnExit.TabIndex = 8;
@@ -143,7 +144,7 @@
       // 
       this.btnPlaceholder.BackColor = System.Drawing.SystemColors.InactiveCaption;
       this.btnPlaceholder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btnPlaceholder.Location = new System.Drawing.Point(43, 128);
+      this.btnPlaceholder.Location = new System.Drawing.Point(44, 178);
       this.btnPlaceholder.Name = "btnPlaceholder";
       this.btnPlaceholder.Size = new System.Drawing.Size(182, 56);
       this.btnPlaceholder.TabIndex = 9;
@@ -152,7 +153,7 @@
       // btn3E30
       // 
       this.btn3E30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3E30.Location = new System.Drawing.Point(43, 314);
+      this.btn3E30.Location = new System.Drawing.Point(44, 364);
       this.btn3E30.Name = "btn3E30";
       this.btn3E30.Size = new System.Drawing.Size(182, 56);
       this.btn3E30.TabIndex = 10;
@@ -162,7 +163,7 @@
       // btn3E31
       // 
       this.btn3E31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3E31.Location = new System.Drawing.Point(231, 314);
+      this.btn3E31.Location = new System.Drawing.Point(232, 364);
       this.btn3E31.Name = "btn3E31";
       this.btn3E31.Size = new System.Drawing.Size(182, 56);
       this.btn3E31.TabIndex = 11;
@@ -172,18 +173,29 @@
       // btn3E32
       // 
       this.btn3E32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.btn3E32.Location = new System.Drawing.Point(419, 314);
+      this.btn3E32.Location = new System.Drawing.Point(420, 364);
       this.btn3E32.Name = "btn3E32";
       this.btn3E32.Size = new System.Drawing.Size(182, 56);
       this.btn3E32.TabIndex = 12;
       this.btn3E32.Text = "Exercise 3.32 - Car-Pool";
       this.btn3E32.UseVisualStyleBackColor = true;
       // 
+      // lblHeader
+      // 
+      this.lblHeader.AutoSize = true;
+      this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lblHeader.Location = new System.Drawing.Point(73, 23);
+      this.lblHeader.Name = "lblHeader";
+      this.lblHeader.Size = new System.Drawing.Size(500, 24);
+      this.lblHeader.TabIndex = 13;
+      this.lblHeader.Text = "Visual C# How to Program by Paul and Harvey Deitel";
+      // 
       // FrmExercises
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(660, 394);
+      this.ClientSize = new System.Drawing.Size(649, 450);
+      this.Controls.Add(this.lblHeader);
       this.Controls.Add(this.btn3E32);
       this.Controls.Add(this.btn3E31);
       this.Controls.Add(this.btn3E30);
@@ -220,6 +232,7 @@
     private System.Windows.Forms.Button btn3E30;
     private System.Windows.Forms.Button btn3E31;
     private System.Windows.Forms.Button btn3E32;
+    private System.Windows.Forms.Label lblHeader;
   }
 }
 
