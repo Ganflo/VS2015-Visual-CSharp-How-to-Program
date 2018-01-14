@@ -172,6 +172,7 @@
       this.btn3E31.TabIndex = 11;
       this.btn3E31.Text = "Exercise 3.31 - Budgeting";
       this.btn3E31.UseVisualStyleBackColor = true;
+      this.btn3E31.Click += new System.EventHandler(this.btn3E31_Click);
       // 
       // btn3E32
       // 

@@ -210,5 +210,52 @@ namespace EndOfChptrExercises
         $"Number of negative numbers: {neg}" + Environment.NewLine +
         $"Number of zero numbers: {zer}";
     }
+
+    private void btn3E31_Click(object sender, EventArgs e)
+    {
+      // VARIABLES
+      // monthly income
+      // monthly expenses
+      // monthly savings = monthly income - monthly expenses
+      // saving ratio = monthly savings / monthly income
+      
+      double mIncome = double.Parse(Microsoft.VisualBasic.Interaction.InputBox($"Enter your monthly income: ", "Num", ""));
+      double mExpenses = double.Parse(Microsoft.VisualBasic.Interaction.InputBox($"Enter your monthly expenses: ", "Num", ""));
+      double mSavings = mIncome - mExpenses;
+      double sRatio = mSavings / mIncome;
+
+      txtResult.Text =
+        $"Monthly Income: {mIncome:C}" + Environment.NewLine +
+        $"Monthly Expenses: {mExpenses:C}" + Environment.NewLine +
+        $"Monthly Savings: {mSavings:C}" + Environment.NewLine;
+
+      // CHART
+      // Savings Ratio Analysis
+      // < 21% Low on Savings
+      // 21% - 40% Moderate
+      // 41% - 75% Strong
+      // Greater than 75% Insane
+
+      if (sRatio < 0.21 && sRatio >= 0)
+      {
+        txtResult.Text += $"Saving's Ratio Analysis: {Math.Round(sRatio * 100, 2)}% - Low on Savings";
+      }
+      else if (sRatio > 0.2 && sRatio < 0.41)
+      {
+        txtResult.Text += $"Saving's Ratio Analysis: {Math.Round(sRatio * 100, 2)}% - Moderate on Savings";
+      }
+      else if (sRatio > 0.4 && sRatio < 0.76)
+      {
+        txtResult.Text += $"Saving's Ratio Analysis: {Math.Round(sRatio * 100, 2)}% - Strong on Savings";
+      }
+      else if (sRatio > 0.75)
+      {
+        txtResult.Text += $"Saving's Ratio Analysis: {Math.Round(sRatio * 100, 2)}% - Insane on Savings";
+      }
+      else if (sRatio < 0)
+      {
+        txtResult.Text += $"Saving's Ratio Analysis: {Math.Round(sRatio * 100, 2)}% - Deficit on Savings";
+      }
+    }
   }
 }
