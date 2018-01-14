@@ -142,5 +142,42 @@ namespace EndOfChptrExercises
         }
       }
     }
+
+    private void btn3E29_Click(object sender, EventArgs e)
+    {
+      int n;
+
+      while (true)
+      {
+        do
+        {
+          n = int.Parse(Microsoft.VisualBasic.Interaction.InputBox("Enter a positive number: ", "Num", ""));
+        }
+
+        while (n <= 0);  // Doesn't handle non integers...but works
+
+        if (n >= 1)
+        {
+          break;
+        }
+      }
+
+      txtResult.Text =
+        $"Input a number: {n}" + Environment.NewLine +
+        $"The Table is:-" + Environment.NewLine;
+
+      for(var i = 1; i <= 10; i++)
+      {
+        if (i == 10)   // Display's the tenth row properly with this
+        {
+          txtResult.Text += $"{n}       X       {i}     =       {n * i}" + Environment.NewLine;
+        }
+        else
+        {
+          txtResult.Text += $"{n}       X       {i}       =       {n * i}" + Environment.NewLine;
+        }
+      }
+
+    }
   }
 }

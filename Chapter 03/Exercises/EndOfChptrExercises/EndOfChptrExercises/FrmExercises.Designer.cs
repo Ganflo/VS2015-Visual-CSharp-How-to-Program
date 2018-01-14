@@ -118,6 +118,7 @@
       this.btn3E29.TabIndex = 6;
       this.btn3E29.Text = "Exercise 3.29 - Multiplication Table";
       this.btn3E29.UseVisualStyleBackColor = true;
+      this.btn3E29.Click += new System.EventHandler(this.btn3E29_Click);
       // 
       // btnClear
       // 
