@@ -257,5 +257,40 @@ namespace EndOfChptrExercises
         txtResult.Text += $"Saving's Ratio Analysis: {Math.Round(sRatio * 100, 2)}% - Deficit on Savings";
       }
     }
+
+    private void btn3E32_Click(object sender, EventArgs e)
+    {
+      // miles per day
+      // cost per gallon
+      // mpg average
+      // parking fees
+      // toll fees
+      // total people
+      // total cost
+      // cost per person = total cost / total people
+      // total saved = total cost - (cost per person * (total people - 1))
+
+      double milesPerDay = double.Parse(Microsoft.VisualBasic.Interaction.InputBox($"Enter your miles per day: ", "Num", ""));
+      double costPerGal = double.Parse(Microsoft.VisualBasic.Interaction.InputBox($"Enter your cost per gallon of gas: ", "Num", ""));
+      double  avgMPG = double.Parse(Microsoft.VisualBasic.Interaction.InputBox($"Enter your vehicles average MPG: ", "Num", ""));
+      double parkingFees = double.Parse(Microsoft.VisualBasic.Interaction.InputBox($"Enter your daily parking fees: ", "Num", ""));
+      double tollFees = double.Parse(Microsoft.VisualBasic.Interaction.InputBox($"Enter your daily toll fees: ", "Num", ""));
+      double totalPeople = double.Parse(Microsoft.VisualBasic.Interaction.InputBox($"Enter the total people carpooling: ", "Num", ""));
+      double totalCostInd = ((milesPerDay / avgMPG) * costPerGal) + parkingFees + tollFees;
+      double totalCostAll = (((milesPerDay / avgMPG) * costPerGal) + parkingFees + tollFees) * totalPeople;
+      double costPerPerson = totalCostInd / totalPeople;
+      double totalSavedInd = (totalPeople - 1) * costPerPerson;
+      double totalSaved = totalCostAll - totalCostInd;
+
+      txtResult.Text =
+        $"Individual miles per day: {milesPerDay}    Total miles per day {milesPerDay * totalPeople}" + Environment.NewLine +
+        $"Average MPG of vehicles: {avgMPG}" + Environment.NewLine +
+        $"Average cost per gallon of gas: {costPerGal:C}" + Environment.NewLine +
+        $"Individual parking fees: {parkingFees:C}    Total parking fees: {parkingFees * totalPeople:C}" + Environment.NewLine +
+        $"Individual toll fees: {tollFees:C}    Total toll fees: {tollFees * totalPeople:C}" + Environment.NewLine +
+        $"Total people car-pooling: {totalPeople}" + Environment.NewLine +
+        $"Total cost individually: {totalCostInd:C}    Total cost for all: {totalCostAll:C}" + Environment.NewLine +
+        $"Total saved individually: {totalSavedInd:C}    Total saved for all: {totalSaved:C}";
+    }
   }
 }

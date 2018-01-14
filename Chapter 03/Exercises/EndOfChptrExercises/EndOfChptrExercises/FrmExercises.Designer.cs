@@ -183,6 +183,7 @@
       this.btn3E32.TabIndex = 12;
       this.btn3E32.Text = "Exercise 3.32 - Car-Pool";
       this.btn3E32.UseVisualStyleBackColor = true;
+      this.btn3E32.Click += new System.EventHandler(this.btn3E32_Click);
       // 
       // lblHeader
       // 
