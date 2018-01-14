@@ -161,6 +161,7 @@
       this.btn3E30.TabIndex = 10;
       this.btn3E30.Text = "Exercise 3.30 - Counting Values";
       this.btn3E30.UseVisualStyleBackColor = true;
+      this.btn3E30.Click += new System.EventHandler(this.btn3E30_Click);
       // 
       // btn3E31
       // 

@@ -179,5 +179,36 @@ namespace EndOfChptrExercises
       }
 
     }
+
+    private void btn3E30_Click(object sender, EventArgs e)
+    {
+      decimal pos = 0m;
+      decimal neg = 0m;
+      decimal zer = 0m;
+      decimal num;
+
+      for (var i = 1; i <= 5; i++)
+      {
+        num = decimal.Parse(Microsoft.VisualBasic.Interaction.InputBox($"Enter number {i}: ", "Num", ""));
+
+        if (num < 0)
+        {
+          neg++;
+        }
+        else if (num == 0)
+        {
+          zer++;
+        }
+        else
+        {
+          pos++;
+        }
+      }
+
+      txtResult.Text =
+        $"Number of positive numbers: {pos}" + Environment.NewLine +
+        $"Number of negative numbers: {neg}" + Environment.NewLine +
+        $"Number of zero numbers: {zer}";
+    }
   }
 }
