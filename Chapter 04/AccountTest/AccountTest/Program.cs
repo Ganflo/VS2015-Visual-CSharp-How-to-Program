@@ -10,7 +10,13 @@ namespace AccountTest
   {
     static void Main(string[] args)
     {
-      // Not same as book 
+      decimal number = 2;
+      decimal count = 10;
+      decimal totalPrice = 20.95m;
+
+      Console.WriteLine(number * totalPrice);
+
+      Console.ReadLine();
     }
   }
 }
